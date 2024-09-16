@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="outerdiv">
+      <h1>Calculator</h1>
+      <div id="parent" class="col-6 col1-9 col2-4 col3-3">
+        <div id="field1" class="field">
+          <label for="input1">Enter No.</label>
+          <input type="number" id="input1" name="input1" />
+        </div>
+        <div id="symbol">+</div>
+        <div id="field2" class="field">
+          <label for="input2">Enter No.</label>
+          <input type="number" id="input2" name="input2" />
+        </div>
+        <p id="para"></p>
+        <button onclick="submit()" id="button">submit</button>
+        <select id="select" onclick="arithmetic()">
+          <option selected hidden value="">Select arithmetic operations</option>
+          <option value="Add">Add</option>
+          <option value="Subtract">Subtract</option>
+          <option value="Multiplication">Multiplication</option>
+          <option value="Divison">Divison</option>
+          <option value="Palindrome">Palindrome</option>
+          <option value="Factorial">Factorial</option>
+        </select>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
